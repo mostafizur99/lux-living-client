@@ -9,7 +9,10 @@
 .custom-title span {
     font-weight: 600;
 }
-
+/* Nav  */
+.main-logo{
+    color: #004ae2;
+}
 h2.logo-nav {
     font-weight: 700;
 }

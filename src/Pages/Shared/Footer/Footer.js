@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, ListGroup, Nav, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUserMd, faMapMarkerAlt, faEnvelope, faPhoneVolume, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
+import { faIgloo, faUserMd, faMapMarkerAlt, faEnvelope, faPhoneVolume, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faTwitter, faLinkedinIn, faInstagram, faDribbble, faPinterestP } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css'
 
@@ -15,7 +15,7 @@ const Footer = () => {
                     <Row className="footer-wrap">
                         <Col md={4}>
                             <div className="footer-logo">
-                                <h2>LuxLiving</h2>
+                                <h2><FontAwesomeIcon className="me-2" icon={faIgloo} />LuxLiving</h2>
                                 <h5>A World To Locate Your Dream</h5>
                             </div>
                         </Col>

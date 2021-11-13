@@ -41,7 +41,7 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: transform .6s ease-in-out;
-    border: 1px solid gray;
+    border: 1px solid rgba(128, 128, 128, 0.267);
     padding: 1.5rem;
 }
 .client-review .carousel-item::before {

@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faUserCircle, faIgloo } from '@fortawesome/free-solid-svg-icons';
 import './Navigation.css';
 
 const Navigation = () => {
@@ -13,7 +13,7 @@ const Navigation = () => {
         <>
             <Navbar collapseOnSelect expand="lg" variant="light" bg="light" sticky="top">
                 <Container>
-                    <Navbar.Brand href="/"><h2 className="logo-nav">LuxLiving</h2>
+                    <Navbar.Brand href="/"><h2 className="logo-nav"><FontAwesomeIcon className="main-logo me-2" icon={faIgloo} />LuxLiving</h2>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">

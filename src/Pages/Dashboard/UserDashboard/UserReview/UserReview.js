@@ -39,11 +39,9 @@ const UserReview = () => {
                     <div className="review-form">
                         {/* review form  */}
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            {/* <label>Full Name</label> */}
                             <input type="hidden" label="Name"  {...register("name", { required: true })} placeholder="name" defaultValue={user?.displayName} />
                             {errors.name && <span>This field is required</span>}
 
-                            {/* <label>Your Email</label> */}
                             <input type="hidden"  {...register("email", { required: true })} placeholder="email" defaultValue={user?.email} />
                             {errors.email && <span>This field is required</span>}
 
@@ -57,9 +55,6 @@ const UserReview = () => {
                                 <option value='0'>0</option>
                             </select>
                             {errors.rating && <span>This field is required</span>}
-
-                            {/* <input type="number" {...register("ratingNum", { min: 0, max: 5 })} />
-                            {errors.ratingNum && <span>This field is required</span>} */}
 
                             <label>Drop some words for us</label>
                             <textarea {...register("desc", { required: true })} placeholder="Please input your address" />
