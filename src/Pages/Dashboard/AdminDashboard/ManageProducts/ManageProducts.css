@@ -1,0 +1,17 @@
+.manage-product-section{
+    padding: 4rem 0;
+}
+/* Tablet Device */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .manage-header {
+        padding: 0 6rem;
+    }
+}
+
+
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .manage-header{
+        padding: 0 2rem;
+    }
+}

@@ -1,0 +1,38 @@
+.make-admin-section{
+    padding: 4rem 0;
+}
+.makeAdmin-form label{
+    display: block;
+    margin-bottom: 1rem;
+}
+.makeAdmin-form .admin-email{
+    color: #004ae2;
+    margin-right: 1rem;
+    border: 1px solid #004ae2;
+    padding: .5rem;
+}
+.makeAdmin-form .admin-email:focus{
+    outline: none !important;
+    border:2px solid #004ae2;
+    box-shadow: 0 0 5px #719ECE;
+}
+.makeAdmin-btn{
+    border: none;
+    background: #004ae2;
+    padding: .5rem 1rem;
+    color: #fff;
+    border-radius: 30px;
+}
+
+/* Tablet Device */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+   
+}
+
+
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .admin-header {
+        padding: 0 2rem;
+    }
+}

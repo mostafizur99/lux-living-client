@@ -1,0 +1,14 @@
+.dashboard-nav{
+    min-height: 100vh;
+}
+
+/* Tablet Device */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    
+}
+
+
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    
+}

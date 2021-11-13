@@ -1,0 +1,117 @@
+.carousel-item{
+    position: relative;
+    height: 580px;
+}
+.carousel-item::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    content: "";
+    z-index: 1;
+}
+    .carousel-text {
+        /* background: #fff; */
+        color: #fff;
+        position: absolute;
+        bottom: 25%;
+        right: 20%;
+        padding: 1.7rem 2rem;
+        width: 55rem;
+        z-index: 9;
+    }
+    .carousel-text h3 {
+        color: #fff;
+        font-size: 4.5rem;
+        font-weight: 300;
+        /* line-height: 2.8rem; */
+        letter-spacing: .4rem;
+    }
+    .carousel-text span {
+        font-size: 4.5rem;
+        font-weight: 600;
+        letter-spacing: .4rem;
+    }
+    .carousel-text p {
+        font-size: 1.5rem;
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    .banner-btn {
+        font-size: .7375rem;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        text-align: center;
+        background-color: #004ae2;
+        transition: .3s;
+        letter-spacing: .3rem;
+    }
+    .banner-btn:hover {
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid #004ae2;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    
+    /* Tablet Device */
+    @media only screen and (min-width: 688px) and (max-width:992px) {
+        .carousel-item {
+            position: relative;
+            height: 460px;
+        }
+        .carousel-text {
+            bottom: 22%;
+            right: 15%;
+            padding: 1rem 1rem;
+            width: 33rem;
+        }
+        .carousel-text h3 {
+            font-size: 3rem;
+        }
+        .carousel-text span {
+            font-size: 3rem;
+        }
+        .carousel-text p {
+            font-size: 1.2rem;
+        }
+    }
+    
+    
+    /* Mobile Device */
+    @media only screen and (max-width:688px) {
+        .carousel-item {
+            height: 162px;
+        }
+        .carousel-text {
+            bottom: 8%;
+            right: 8%;
+            padding: 1rem 1rem;
+            width: 20rem;
+        }
+        .carousel-text h3 {
+            font-size: 1.4rem;
+            letter-spacing: .3rem;
+        }
+        .carousel-text span {
+            font-size: 1.4rem;
+            letter-spacing: .3rem;
+        }
+        .carousel-text p {
+            font-size: .7rem;
+            margin-bottom: .5rem;
+        }
+        .banner-btn {
+            font-size: .5375rem;
+            padding: .4rem .6rem;
+        }
+    }

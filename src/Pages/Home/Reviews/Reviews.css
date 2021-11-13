@@ -1,0 +1,124 @@
+.review-section {
+    padding: 5rem 0 5rem 0;
+}
+.icon-color{
+    color: gold;
+}
+.client-review{
+    position: relative;
+}
+.client-review .bg-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 40%;
+    /* width: 200%; */
+    color: #f7f7f7;
+    font-size: 150px;
+    line-height: 1;
+    font-weight: 800;
+    white-space: nowrap;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: -1;
+}
+.review-header {
+    padding: 0 3rem;
+}
+.client-review .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+}
+.client-review .carousel-item {
+    position: relative;
+    /* display: none; */
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+    border: 1px solid gray;
+    padding: 1.5rem;
+}
+.client-review .carousel-item::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    content: "";
+    z-index: 1;
+}
+.client-review .review-content h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+.client-review .review-content h4::before {
+    display: block;
+    /* margin-bottom: 30px; */
+    color: #004be24d;
+    font-family: "Font Awesome 5 Free" ;
+    font-size: 40px;
+    content: "\f10e";
+}
+.client-review .review-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+}
+/* .client-review .review-content h3::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    margin: auto;
+    width: 60% ;
+    height: 1px;
+    z-index: -1;
+    background-color: #222;
+    transition: width .3s ease;
+} */
+
+/* Tablet Device */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .client-review .carousel-inner {
+        height: 100%;
+    }
+    .client-review .bg-text {
+        font-size: 95px;
+    }
+    .client-review .review-content h4 {
+        font-size: 1.1rem;
+    }
+    .client-review .review-content h3 {
+        font-size: 1.3rem;
+    }
+}
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .review-section {
+        padding: 0 0 3rem 0;
+    }
+    .client-review .carousel-inner {
+        height: 100%;
+    }
+    .client-review .bg-text {
+        top: 50%;
+        font-size: 46px;
+    }
+    .client-review .review-content h4 {
+        font-size: 1.1rem;
+    }
+    .client-review .review-content h3 {
+        font-size: 1.3rem;
+    }
+}

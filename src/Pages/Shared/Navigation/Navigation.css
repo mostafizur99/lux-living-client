@@ -1,0 +1,71 @@
+/* common css */
+
+.custom-title {
+    font-weight: 300;
+    margin-bottom: 0;
+    color: #222;
+    line-height: 3rem;
+}
+.custom-title span {
+    font-weight: 600;
+}
+
+h2.logo-nav {
+    font-weight: 700;
+}
+
+/* Nav-link  */
+.navbar-light .navbar-nav .nav-link {
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    line-height: 1.7;
+    z-index: 1;
+    display: inline-block;
+    color: #222;
+}
+.navbar-light .navbar-nav .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    margin: auto;
+    width: 0px;
+    height: 1px;
+    z-index: -1;
+    background-color: #222;
+    transition: width .3s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover.nav-link::before  {
+    width: 60% ;
+}
+.nav-sign-out {
+    border: 0;
+    background: #004ae2;
+    border-radius: 30px;
+    padding: .2rem .9rem;
+    font-weight: 600;
+    color: #fff;
+    font-size: .9rem;
+}
+.nav-user {
+    /* color: gray; */
+    color: #004ae2;
+    font-style: italic;
+    font-size: .9rem;
+}
+
+/* Tablet Device */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .navbar-light .navbar-nav .nav-link:hover.nav-link::before  {
+        width: 10% ;
+    }
+}
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .navbar-light .navbar-nav .nav-link:hover.nav-link::before  {
+        width: 15% ;
+    }
+}

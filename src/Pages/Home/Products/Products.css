@@ -1,0 +1,115 @@
+.product-section{
+    padding: 5rem 0 5rem 0;
+}
+.card-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.product-price-wrap {
+    position: absolute;
+    right: 3%;
+    top: 32%;
+    /* color: #fff; */
+    color: #004ae2;
+    text-align: right;
+}
+.product-price-wrap h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.product-price-wrap h5{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+/* .product-image{
+position: relative;
+}
+.product-image::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    content: "";
+    z-index: 1;
+} */
+
+.product-content {
+    text-align: left;
+}
+.product-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: .7rem 0 .2rem 0;
+}
+.product-subtitle {
+    margin-bottom: .9rem;
+    border-bottom: 0;
+    font-weight: 300;
+}
+.product-content p {
+    font-size: .9rem;
+    color: #8A8D98;
+    font-weight: 300;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid #8a8d9840;
+}
+.product-btn {
+    font-size: .7375rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: .6rem .6rem;
+    text-decoration: none;
+    text-align: center;
+    background-color: #004ae2;
+    transition: .3s;
+    letter-spacing: .2rem;
+    border: none;
+}
+.product-btn:hover {
+    color: #222;
+    background-color: transparent;
+    outline: 2px solid #004ae2;
+}
+
+
+/* Tablet Device */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .product-section {
+        padding: 3rem 0 3rem 0;
+    }
+    .product-price-wrap {
+        top: 13%;
+    }
+    .product-price-wrap h4 {
+        font-size: 1rem;
+    }
+    .product-price-wrap h5 {
+        font-size: 1rem;
+    }
+}
+
+
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .product-section {
+        padding: 3rem 0 3rem 0;
+    }
+    .product-price-wrap {
+        top: 6%;
+    }
+    .product-price-wrap h4 {
+        font-size: 1rem;
+    }
+    .product-price-wrap h5 {
+        font-size: 1rem;
+    }
+    .product-subtitle {
+        font-size: .9rem;
+    }
+}
+

@@ -1,0 +1,53 @@
+.my-order-section{
+    padding: 1rem 0 5rem 0;
+    border-top: 1px solid #004be21e;
+}
+.my-order-section .title {
+    font-weight: 600;
+}
+.my-order-section span.custom-status {
+    padding: 0.2rem .56em;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.my-order-section button.order-btn {
+    border: none;
+    background: #dc3545;
+    color: #fff;
+    padding: .5rem 1rem;
+}
+/* Tablet Device */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .my-order-section .title {
+        font-size: 1rem;
+    }
+    .my-order-section span.custom-status {
+        font-size: .7rem;
+    }
+    .order-price.card-title.h5 {
+        font-size: .95rem;
+    }
+    .my-order-section button.order-btn {
+        padding: .4rem .7rem;
+        font-size: .75rem;
+    }
+}
+
+
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .my-order-section .title {
+        font-size: 1rem;
+    }
+    .my-order-section span.custom-status {
+        font-size: .7rem;
+    }
+    .order-price.card-title.h5 {
+        font-size: .95rem;
+    }
+    .my-order-section button.order-btn {
+        padding: .4rem .7rem;
+        font-size: .75rem;
+    }
+}

@@ -1,0 +1,131 @@
+.footer-container {
+    background: #222;
+    margin: 0 3rem;
+    padding: 2rem 2rem 0 2rem;
+}
+.footer-wrap{
+    padding: 3rem 0;
+}
+.footer-logo{
+    color: #fff;
+    text-align: left;
+}
+.footer-logo h2{
+    font-weight: 700;
+}
+.footer-logo h5 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: overline;
+}
+.feature-item {
+    border: 1px solid #666;
+    color: #fff;
+    width: 40%;
+    font-size: .9rem;
+    margin-right: .5rem;
+    padding: .1rem .4rem;
+}
+.footer-social-wrap a{
+    text-decoration: none;
+}
+.footer-icon {
+    font-size: 20px;
+    color: #fff;
+}
+.footer-contact p {
+    margin: 0;
+}
+.footer-features.text-white {
+    border-left: 1px solid #979797;
+    border-right: 1px solid #979797;
+}
+.list-group-item {
+    padding: 0.3rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    /* text-align: left; */
+}
+
+/* Copyright section */
+.copy-right-section {
+    padding: 1rem 5rem;
+    border-top: 1px solid #3c3a3a;
+}
+.copy-right {
+    text-align: left;
+}
+.footer-social-wrap {
+    text-align: right;
+}
+.footer-icon-wrap{
+    margin-left: .8rem;
+
+}
+.copy-right p {
+    color: #999;
+    font-size: .9rem;
+}
+
+
+/* Tablet Device */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .footer-logo h2 {
+        font-size: 1.5rem;
+    }
+    .footer-logo h5 {
+        font-size: .8rem;
+    }
+    .copy-right-section {
+        padding: 1rem 0rem;
+    }
+    .feature-item {
+        font-size: .6rem;
+    }
+    .footer-contact span {
+        font-size: .7rem;
+    }
+}
+
+
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .footer-container {
+        margin: 0 1rem;
+        padding: 1rem 1rem 0 1rem;
+    }
+    .footer-wrap {
+        padding: 0 0 1rem 0;
+    }
+    .footer-logo{
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    .footer-logo h5 {
+        font-size: .8rem;
+    }
+    .footer-features.text-white {
+        margin-bottom: 2.5rem;
+    }
+    .feature-item {
+        font-size: .6rem;
+    }
+    .footer-contact span {
+        font-size: .7rem;
+    }
+    .copy-right-section {
+        padding: 1rem .5rem;
+    }
+    .copy-right {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .copy-right p {
+        font-size: .6rem;
+    }
+    .footer-social-wrap {
+        text-align: center;
+    }
+}
