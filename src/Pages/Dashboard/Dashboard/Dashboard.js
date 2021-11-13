@@ -48,7 +48,7 @@ const Dashboard = () => {
                                             <Nav.Link as={Link} to={`${url}/manageProducts`}>Manage Products</Nav.Link>
                                         </>
                                     }
-                                    <button onClick={logout} className="nav-btn  ms-4">Sign out</button>
+                                    <button onClick={logout} className="dashboard-logout">Sign out</button>
 
                                 </Nav>
                             </div>
