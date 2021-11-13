@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import useAuth from '../../../../hooks/useAuth';
 import './UserReview.css';
 
@@ -57,7 +57,7 @@ const UserReview = () => {
                             {errors.rating && <span>This field is required</span>}
 
                             <label>Drop some words for us</label>
-                            <textarea {...register("desc", { required: true })} placeholder="Please input your address" />
+                            <textarea {...register("desc", { required: true })} placeholder="Please input your reviews" />
                             {errors.desc && <span>This field is required</span>}
 
                             <br />

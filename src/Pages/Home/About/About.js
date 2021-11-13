@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 import './About.css';
 
@@ -21,7 +21,7 @@ const About = () => {
                             </div>
                         </Col>
                     </Row>
-                    <div class="aboutbg-text">About</div>
+                    <div className="aboutbg-text">About</div>
                 </div>
             </Container>
         </div>

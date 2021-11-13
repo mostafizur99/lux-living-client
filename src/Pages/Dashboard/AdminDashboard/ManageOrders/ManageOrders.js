@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row, Spinner, Table } from 'react-bootstrap';
-
+import './ManageOrders.css';
 
 const ManageOrders = () => {
     const [orders, setOrders] = useState([]);
@@ -17,7 +17,7 @@ const ManageOrders = () => {
             .then(res => res.json())
             .then(data => {
                 setOrders(data)
-                // setIsLoading(false)
+                setIsLoading(false)
             })
             .finally(() => setIsLoading(false));
     }, [isDeleted]);
@@ -47,6 +47,7 @@ const ManageOrders = () => {
 
     // UPDATE status 
     const handleReceive = id => {
+        setIsDeleted(false);
         setIsLoading(true)
         const url = `https://warm-thicket-54425.herokuapp.com/orders/${id}`;
         fetch(url, {
@@ -57,8 +58,7 @@ const ManageOrders = () => {
                 console.log(data)
                 if (data.modifiedCount > 0) {
                     setIsDeleted(true);
-                    // setIsLoading(false)
-
+                    setIsLoading(false)
                 }
             })
             .finally(() => setIsLoading(false));
@@ -72,8 +72,7 @@ const ManageOrders = () => {
     }
 
     return (
-        <div>
-            <h3>Manage Orders {orders.length}</h3>
+        <div className="manage-order">
             <Container fluid>
                 <Row>
                     <Col>
@@ -83,7 +82,7 @@ const ManageOrders = () => {
                             <thead>
                                 <tr>
                                     <th>No.</th>
-                                    <th>Package Name</th>
+                                    <th>Product Name</th>
                                     <th>User Name</th>
                                     <th>User Email</th>
                                     <th>Remove</th>
@@ -93,14 +92,14 @@ const ManageOrders = () => {
                             <tbody>
 
                                 {
-                                    orders.map(order =>
+                                    orders.map((order, index) =>
                                         <tr key={order?._id}>
-                                            <td>1</td>
+                                            <td>{index + 1}</td>
                                             <td>{order?.title}</td>
                                             <td>{order?.name}</td>
                                             <td>{order?.email}</td>
                                             <td>
-                                                <button className="delete-btn
+                                                <button className="mng-orderdlt-btn
 " onClick={() => handleCancel(order._id)}>Delete</button>
                                             </td>
                                             <td>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../../../hooks/useAuth';
-import { Card, Col, Container, Row, Spinner } from 'react-bootstrap';
+import { Card, Col, Row, Spinner } from 'react-bootstrap';
 import './MyOrder.css';
 
 

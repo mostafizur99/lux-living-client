@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Carousel, Col, Container, Row, Spinner } from 'react-bootstrap';
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import Rating from 'react-rating';
 import './Reviews.css';
 
@@ -34,7 +34,7 @@ const Reviews = () => {
                             <Carousel className="review-wrap">
                                 {
                                     reviews.map(review =>
-                                        <Carousel.Item className="review-item">
+                                        <Carousel.Item className="review-item" key={review._id}>
                                             <div className="review-content">
                                                 <Rating
                                                     initialRating={review.rating}
@@ -51,7 +51,7 @@ const Reviews = () => {
                         </Col>
                     </Row>
 
-                    <div class="bg-text">Testimonials</div>
+                    <div className="bg-text">Testimonials</div>
                 </div>
             </Container>
         </div>

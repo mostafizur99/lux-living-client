@@ -17,7 +17,7 @@
     width: 80%;
     height: 2.5rem;
     color: rgb(136, 135, 135);
-
+    padding: 0 .6rem;
 }
 .purchase-form textarea{
     border-radius: 10px;
@@ -25,6 +25,7 @@
     font-size: .9rem;
     width: 80%;
     color: rgb(136, 135, 135);
+    padding: 0 .6rem;
 }
 input.purchase-btn{
     background: #004ae2;

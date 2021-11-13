@@ -2,8 +2,8 @@ import React from 'react';
 import { Col, Container, ListGroup, Nav, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo, faUserMd, faMapMarkerAlt, faEnvelope, faPhoneVolume, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
-import { faFacebookF, faTwitter, faLinkedinIn, faInstagram, faDribbble, faPinterestP } from '@fortawesome/free-brands-svg-icons';
+import { faIgloo, faMapMarkerAlt, faEnvelope, faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faTwitter, faInstagram, faDribbble, faPinterestP } from '@fortawesome/free-brands-svg-icons';
 import './Footer.css'
 
 

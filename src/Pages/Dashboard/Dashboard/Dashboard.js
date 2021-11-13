@@ -19,7 +19,7 @@ import ManageProducts from '../AdminDashboard/ManageProducts/ManageProducts';
 
 
 const Dashboard = () => {
-    const { user, admin, logout } = useAuth();
+    const { admin, logout } = useAuth();
 
     let { path, url } = useRouteMatch();
     return (

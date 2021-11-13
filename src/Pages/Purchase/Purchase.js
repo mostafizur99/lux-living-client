@@ -106,12 +106,6 @@ const Purchase = () => {
                                 <p>Hotline1: +123 456 789</p>
                                 <p>Hotline2: +123 456 910</p>
                                 <p>Hotline3: +123 456 911</p>
-                                {/* <p>Please contact us if you have any query to make your booking properly or have question to know anything details about our packages. Our support team is ready to cooperate 24/7 for any kind of help.</p>
-                        <div className="bookind-contact">
-                            <h5>Address: 123 Down Street, CA</h5>
-                            <h5>Email: admin1@travelley.com</h5>
-                            
-                        </div> */}
                             </div>
                         </Col>
                     </Row>

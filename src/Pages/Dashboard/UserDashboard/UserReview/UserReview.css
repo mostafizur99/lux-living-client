@@ -20,6 +20,7 @@
 .review-form textarea {
     color: #004ae2;
     border: 1px solid #004ae2;
+    padding: 2rem 3rem;
 }
 .review-form textarea:focus {
     outline: none !important;

@@ -8,7 +8,7 @@ import './Login.css';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
-    const { user, loginUser, signInWithGoogle, isLoading, authError } = useAuth();
+    const { user, loginUser, authError } = useAuth();
 
     const location = useLocation();
     const history = useHistory();

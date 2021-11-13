@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
-import { Alert, Col, Container, Row } from 'react-bootstrap';
+import { Alert, Col, Row } from 'react-bootstrap';
 import './MakeAdmin.css';
 
 const MakeAdmin = () => {
